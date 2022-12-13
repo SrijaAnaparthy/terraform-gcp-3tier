@@ -18,3 +18,17 @@ resource "google_compute_subnetwork" "subnet1" {
   region        = var.subnet1_region
   network       = google_compute_network.gcp_vpc_network.id
 }
+
+resource "google_compute_subnetwork" "subnet2" {
+  name          = var.subnet2_name
+  ip_cidr_range = var.subnet2_cidr_range
+  region        = var.subnet2_region
+  network       = google_compute_network.gcp_vpc_network.id
+}
+
+resource "google_compute_subnetwork" "subnet3" {
+  name          = var.subnet3_name
+  ip_cidr_range = var.subnet3_cidr_range
+  region        = var.subnet3_region
+  network       = google_compute_network.gcp_vpc_network.id
+}
