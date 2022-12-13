@@ -37,3 +37,14 @@ module "compute" {
   private_key_path             = var.private_key_path
   public_key_path              = var.public_key_path
 }
+
+module "mongo-atlas" {
+  source                       = "../modules/mongo-atlas"
+  gcp_project                  = var.gcp_project
+  atlas_org_id                 = var.atlas_org_id
+  atlas_project_name           = var.atlas_project_name
+  environment                  = var.environment
+  cluster_instance_size_name   = var.cluster_instance_size_name
+  atlas_region                 = var.atlas_region
+  cidr_block_atlas             = var.cidr_block_atlas
+}

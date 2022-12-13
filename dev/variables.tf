@@ -25,3 +25,42 @@ variable "nginx_webserver_disk_type" {}
 variable "nginx_webserver_disk_size" {}
 variable "private_key_path" {}
 variable "public_key_path" {}
+
+
+#mongodb vars
+variable "atlas_public_key" {
+  type        = string
+  description = "MongoDB Atlas Public Key"
+}
+variable "atlas_private_key" {
+  type        = string
+  description = "MongoDB Atlas Private Key"
+}
+# Atlas Organization ID 
+variable "atlas_org_id" {
+  type        = string
+  description = "Atlas organization id"
+}
+# Atlas Project Name
+variable "atlas_project_name" {
+  type        = string
+  description = "Atlas project name"
+}
+# Atlas Project environment
+variable "environment" {
+  type        = string
+  description = "The environment to be built"
+}
+# Cluster instance size name 
+variable "cluster_instance_size_name" {
+  type        = string
+  description = "Cluster instance size name"
+  default     = "M10"
+}
+# Atlas region
+variable "atlas_region" {
+  type        = string
+  description = "GCP region where resources will be created"
+  default     = "WESTERN_EUROPE"
+}
+variable "cidr_block_atlas" {}   
