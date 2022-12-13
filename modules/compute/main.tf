@@ -55,4 +55,8 @@ resource "google_compute_instance" "nginx_webserver" {
       "sudo apt install nginx"
     ]
   }
+
+  metadata = {
+    ssh-keys = "${var.compute_instance_username}:${file(var.public_key_path)}"
+  }
 }

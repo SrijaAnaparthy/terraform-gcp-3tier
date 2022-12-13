@@ -35,4 +35,5 @@ module "compute" {
   nginx_webserver_disk_type    = var.nginx_webserver_disk_type
   nginx_webserver_disk_size    = var.nginx_webserver_disk_size
   private_key_path             = var.private_key_path
+  public_key_path              = var.public_key_path
 }

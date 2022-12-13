@@ -24,3 +24,4 @@ variable "nginx_webserver_disk_name" {}
 variable "nginx_webserver_disk_type" {}
 variable "nginx_webserver_disk_size" {}
 variable "private_key_path" {}
+variable "public_key_path" {}
