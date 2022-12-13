@@ -12,3 +12,4 @@ variable "subnet2_region" {}
 variable "subnet3_name" {}
 variable "subnet3_cidr_range" {}
 variable "subnet3_region" {}
+variable "source_ranges" {}
